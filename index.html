@@ -1,0 +1,90 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Akun</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 40%; /* Mengecilkan lebar container */
+            margin-left: 1%; /* Menggeser container lebih ke kiri */
+        }
+        fieldset {
+            border: 1px solid black;
+            padding: 15px;
+        }
+        input, select {
+            margin-bottom: 8px;
+            padding: 4px;
+            width: 95%; /* Mengecilkan ukuran input */
+        }
+        button {
+            background-color: lightgray;
+            padding: 5px 8px;
+            border: none;
+            cursor: pointer;
+        }
+        .gender-options {
+            display: flex;
+            flex-direction: row; /* Menjadikan opsi jenis kelamin sejajar */
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 8px; /* Menambah jarak dengan elemen berikutnya */
+        }
+    </style>
+</head>
+<body>
+    <h1>Registrasi Akun</h1> <!-- Nayla Putri Innayah (202332165) -->
+    <div class="container">
+        <fieldset>
+            <legend>Formulir Registrasi</legend> <!-- Nayla Putri Innayah (202332165) -->
+            <form>
+                <!-- Input Nama -->
+                <label for="nama">Masukkan nama:</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama"> <!-- Nayla Putri Innayah (202332165) -->
+
+                <!-- Input NIM -->
+                <label for="nim">Masukkan NIM:</label>
+                <input type="text" id="nim" name="nim" placeholder="Masukkan NIM">
+
+                <!-- Input Email -->
+                <label for="email">Masukkan email:</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email">
+
+                <!-- Pilihan Jenis Kelamin -->
+                <label>Jenis Kelamin:</label>
+                <div class="gender-options">
+                    <input type="radio" id="laki" name="gender" value="Laki-laki">
+                    <label for="laki">Laki-Laki</label>
+                    <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+
+                <!-- Pilihan Agama -->
+                <div style="clear: both; margin-top: 10px;">
+                    <label for="agama">Agama:</label>
+                    <select id="agama" name="agama">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                    </select> <!-- Nayla Putri Innayah (202332165) -->
+                </div>
+
+                <!-- Input Password -->
+                <label for="password">Masukkan password:</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan password">
+
+                <!-- Input Konfirmasi Password -->
+                <label for="konfirmasi">Konfirmasi password:</label>
+                <input type="password" id="konfirmasi" name="konfirmasi" placeholder="Konfirmasi password">
+
+                <!-- Tombol Daftar -->
+                <button type="submit">Daftar</button> <!-- Nayla Putri Innayah (202332165) -->
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
